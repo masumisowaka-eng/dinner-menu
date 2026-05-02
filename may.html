@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5月 夜ごはんメニュー＆レシピ【決定版】</title>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--pk:#7fb88a;--pk2:#3a8f56;--gn:#4a8f65;--bl:#3a72a8;--bg:#f6fbf6;--sur:#fff;--bor:#d8ecdd;--tx:#1a2a1e;--sub:#5a7060;--te:#fde8ee;--tet:#8c1a3a;--th:#e4f2e8;--tht:#1a5c32;--ts:#e0ecf8;--tst:#1a3c6c;--rb:#fffbf0;--rbor:#f0d060;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Zen Kaku Gothic New',sans-serif;background:var(--bg);color:var(--tx);}
+header{background:#1a2a1e;color:#fff;padding:24px 16px 20px;position:relative;overflow:hidden;}
+header::after{content:'🌿';position:absolute;font-size:6rem;right:-8px;top:-8px;opacity:0.07;}
+.hl{font-size:0.62rem;letter-spacing:0.2em;color:var(--pk);margin-bottom:5px;}
+h1{font-family:'Shippori Mincho',serif;font-size:1.8rem;margin-bottom:9px;}
+h1 em{color:var(--pk);font-style:normal;}
+.hps{display:flex;gap:5px;flex-wrap:wrap;}
+.hp{padding:3px 9px;border-radius:100px;font-size:0.67rem;font-weight:500;}
+.hpk{background:var(--pk2);color:#fff;}.hpg{background:#c4607a;color:#fff;}.hpo{border:1px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.8);}
+.tabs{position:sticky;top:0;z-index:100;display:flex;background:#fff;border-bottom:2px solid var(--bor);box-shadow:0 2px 6px rgba(0,0,0,0.06);}
+.tb{flex:1;padding:11px 4px;font-family:'Zen Kaku Gothic New',sans-serif;font-size:0.74rem;font-weight:500;border:none;background:none;cursor:pointer;color:var(--sub);border-bottom:3px solid transparent;transition:all 0.15s;}
+.tb.on{color:var(--pk2);border-bottom-color:var(--pk2);background:#f4faf5;}
+.pn{display:none;}.pn.on{display:block;}
+.bbar{background:linear-gradient(90deg,#f0fbf4,#fff8e8);border-bottom:1px solid var(--bor);padding:8px 14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.bs{display:flex;flex-direction:column;gap:1px;}
+.bsl{font-size:0.58rem;color:var(--sub);letter-spacing:0.06em;}
+.bsv{font-size:0.88rem;font-weight:700;color:var(--pk2);}
+.sleg{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+.sl{font-size:0.64rem;display:flex;align-items:center;gap:3px;}
+.sld{width:7px;height:7px;border-radius:50%;}
+.sl-e{background:#c4607a;}.sl-h{background:var(--gn);}.sl-s{background:var(--bl);}
+.pnote{background:#fffbe6;border-left:3px solid #f0c030;margin:10px 12px 0;padding:7px 11px;font-size:0.7rem;border-radius:0 6px 6px 0;color:#5a4a00;line-height:1.65;}
+main{padding:10px 12px;max-width:1000px;margin:0 auto;}
+.wb{margin-bottom:14px;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.07);}
+.wh{padding:9px 14px;color:#fff;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.wh1{background:linear-gradient(90deg,#3a8f56,#7fb88a);}
+.wh2{background:linear-gradient(90deg,#a04060,#e08aa0);}
+.wh3{background:linear-gradient(90deg,#3a7252,#5aaa72);}
+.wh4{background:linear-gradient(90deg,#7a5230,#c49050);}
+.wh5{background:linear-gradient(90deg,#3a5282,#5a80ba);}
+.wt{font-family:'Shippori Mincho',serif;font-size:0.95rem;font-weight:700;}
+.wr{font-size:0.68rem;opacity:0.72;}
+.wcost{background:rgba(255,255,255,0.2);padding:2px 8px;border-radius:20px;font-size:0.66rem;}
+.wth{margin-left:auto;font-size:0.66rem;opacity:0.82;}
+.dg{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));background:var(--bor);gap:1px;}
+.dc{background:#fff;padding:12px 13px;cursor:pointer;}
+.dc:hover .mm{color:var(--pk2);}
+.dt{display:flex;align-items:center;gap:6px;margin-bottom:6px;}
+.dn{font-family:'Shippori Mincho',serif;font-size:1.3rem;font-weight:700;min-width:28px;}
+.dw{font-size:0.66rem;padding:1px 5px;border-radius:3px;border:1px solid var(--bor);color:var(--sub);}
+.dw.sat{color:#1a50a0;border-color:#90c0f0;background:#e8f0fd;}
+.dw.sun{color:#a01a1a;border-color:#f0a0a0;background:#fde8e8;}
+.dw.holiday{color:#a01a1a;border-color:#f0a0a0;background:#fde8e8;}
+.fish{font-size:0.64rem;background:#e8f4fd;color:#1a4a80;padding:1px 5px;border-radius:3px;font-weight:600;margin-left:auto;}
+.special{font-size:0.64rem;background:#ffeae0;color:#a04020;padding:1px 5px;border-radius:3px;font-weight:600;margin-left:auto;}
+.ei{margin-left:auto;font-size:0.68rem;color:var(--sub);transition:transform 0.2s;}
+.dc.open .ei{transform:rotate(180deg);}
+.mm{font-size:0.85rem;font-weight:700;margin-bottom:3px;line-height:1.4;transition:color 0.15s;}
+.md{font-size:0.71rem;color:var(--sub);line-height:1.5;margin-bottom:5px;}
+.tgs{display:flex;gap:3px;flex-wrap:wrap;}
+.t{font-size:0.6rem;padding:1px 5px;border-radius:3px;font-weight:600;}
+.tp{background:var(--te);color:var(--tet);}
+.tq{background:#e4f2e8;color:#1a5c2a;}
+.th2{background:var(--th);color:var(--tht);}
+.ts2{background:var(--ts);color:var(--tst);}
+.te2{background:var(--te);color:var(--tet);}
+.tsp{background:#e8f5d8;color:#3a6a00;}
+.tev{background:#fff0e8;color:#a04020;}
+.cost{font-size:0.64rem;color:var(--sub);text-align:right;margin-top:4px;}
+.cost b{color:var(--pk2);}
+.rbox{display:none;margin-top:10px;background:var(--rb);border:1px solid var(--rbor);border-radius:8px;padding:10px 12px;}
+.dc.open .rbox{display:block;}
+.rtitle{font-size:0.68rem;font-weight:700;color:#7a5a00;margin-bottom:6px;letter-spacing:0.05em;}
+.rmat{font-size:0.69rem;color:var(--tx);margin-bottom:7px;line-height:1.65;}
+.rmat span{color:var(--sub);}
+.rsteps{list-style:none;}
+.rsteps li{font-size:0.71rem;padding:4px 0;border-bottom:1px dotted #e8d080;display:flex;gap:7px;line-height:1.5;}
+.rsteps li:last-child{border-bottom:none;}
+.snum{background:var(--pk2);color:#fff;border-radius:50%;width:17px;height:17px;display:flex;align-items:center;justify-content:center;font-size:0.6rem;font-weight:700;flex-shrink:0;margin-top:1px;}
+.rtip{font-size:0.66rem;color:#7a5a00;background:#fff8e0;border-radius:4px;padding:4px 7px;margin-top:6px;}
+.skip{font-size:0.68rem;color:var(--sub);font-style:italic;padding:2px 0;}
+.sp{padding:10px 12px;max-width:1000px;margin:0 auto;}
+.spnote{background:#fff8e8;border:1px solid #f0d080;border-radius:8px;padding:9px 12px;font-size:0.72rem;color:#5a4200;line-height:1.7;margin-bottom:12px;}
+.sw{margin-bottom:16px;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.07);}
+.swh{padding:10px 14px;color:#fff;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;}
+.swh1{background:linear-gradient(90deg,#3a8f56,#7fb88a);}
+.swh2{background:linear-gradient(90deg,#a04060,#e08aa0);}
+.swh3{background:linear-gradient(90deg,#3a7252,#5aaa72);}
+.swh4{background:linear-gradient(90deg,#7a5230,#c49050);}
+.swh5{background:linear-gradient(90deg,#3a5282,#5a80ba);}
+.swtitle{font-family:'Shippori Mincho',serif;font-size:0.95rem;font-weight:700;}
+.swdate{font-size:0.66rem;opacity:0.75;}
+.swbudget{background:rgba(255,255,255,0.22);padding:2px 9px;border-radius:20px;font-size:0.76rem;font-weight:600;}
+.scols{display:grid;grid-template-columns:repeat(3,1fr);background:var(--bor);gap:1px;}
+.scol{background:#fff;padding:12px 11px;}
+.schd{font-weight:700;font-size:0.8rem;display:flex;align-items:center;gap:5px;padding-bottom:7px;margin-bottom:8px;border-bottom:2px solid;}
+.schd-e{border-color:#c4607a;color:#c4607a;}
+.schd-h{border-color:var(--gn);color:var(--gn);}
+.schd-s{border-color:var(--bl);color:var(--bl);}
+.scat{font-size:0.59rem;letter-spacing:0.08em;color:var(--sub);font-weight:600;margin:7px 0 3px;text-transform:uppercase;}
+.slist{list-style:none;}
+.slist li{font-size:0.73rem;padding:3px 0;border-bottom:1px dotted var(--bor);display:flex;align-items:baseline;gap:4px;}
+.slist li::before{content:'□';color:var(--sub);font-size:0.76rem;flex-shrink:0;}
+.sn{font-size:0.62rem;color:var(--sub);white-space:nowrap;}
+.sp2{font-size:0.62rem;color:var(--pk2);font-weight:600;margin-left:auto;white-space:nowrap;}
+.stotal{background:#f0f8f2;padding:7px 12px;font-size:0.76rem;display:flex;gap:14px;flex-wrap:wrap;border-top:1px solid var(--bor);}
+.stotal span{color:var(--sub);}
+.stotal b{color:var(--pk2);}
+.sumbox{background:#1a2a1e;color:#fff;border-radius:12px;padding:16px;margin:12px 12px 0;}
+.sumtitle{font-family:'Shippori Mincho',serif;font-size:1rem;color:var(--pk);margin-bottom:11px;}
+.sumg{display:grid;grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:8px;}
+.sumc{background:rgba(255,255,255,0.08);border-radius:7px;padding:9px 10px;}
+.suml{font-size:0.6rem;color:rgba(255,255,255,0.5);letter-spacing:0.07em;margin-bottom:3px;}
+.sumv{font-size:0.95rem;font-weight:700;}
+.cal{font-size:0.64rem;color:#2e7d32;text-align:right;margin-top:3px;}
+.cal span{background:#e8f5e9;padding:2px 7px;border-radius:10px;font-weight:600;}
+.backlink{display:inline-block;font-size:0.68rem;color:rgba(255,255,255,0.8);margin-bottom:8px;text-decoration:none;border:1px solid rgba(255,255,255,0.3);padding:3px 9px;border-radius:20px;}
+.backlink:hover{background:rgba(255,255,255,0.1);}
+footer{text-align:center;padding:16px;font-size:0.66rem;color:var(--sub);letter-spacing:0.07em;}
+@media(max-width:580px){.scols{grid-template-columns:1fr;}.dg{grid-template-columns:1fr;}h1{font-size:1.5rem;}.tb{font-size:0.68rem;}}
+</style>
+</head>
+<body>
+<header>
+  <a class="backlink" href="index.html">← 月選択へ</a>
+  <div class="hl">🌿 MAY 2026 — 決定版</div>
+  <h1>5月の<em>夜ごはん</em>【決定版】</h1>
+  <div class="hps">
+    <span class="hp hpk">🍗 鶏むね肉メイン</span>
+    <span class="hp hpg">🐷 豚しゃぶ</span>
+    <span class="hp hpo">揚げ物なし</span>
+    <span class="hp hpo">魚は週1回</span>
+    <span class="hp hpo">予算¥30,000</span>
+    <span class="hp hpo">家族3人・31日</span>
+    <span class="hp hpo">🎏GW＆💐母の日</span>
+  </div>
+</header>
+
+<div class="tabs">
+  <button class="tb on" onclick="go('menu',this)">🍽 メニュー＆作り方</button>
+  <button class="tb" onclick="go('shop',this)">🛒 買い物リスト</button>
+</div>
+
+<!-- MENU -->
+<div id="pn-menu" class="pn on">
+<div class="bbar">
+  <div class="bs"><div class="bsl">月予算</div><div class="bsv">¥30,000</div></div>
+  <div class="bs"><div class="bsl">1日目安（3人）</div><div class="bsv">¥968</div></div>
+  <div class="bs"><div class="bsl">調理法</div><div class="bsv">炒め・煮・焼・蒸・鍋のみ</div></div>
+  <div class="sleg">
+    <div class="sl"><div class="sld sl-e"></div>エザキ</div>
+    <div class="sl"><div class="sld sl-h"></div>ハローディ</div>
+    <div class="sl"><div class="sld sl-s"></div>サンリブ</div>
+  </div>
+</div>
+<div class="pnote">💡 <b>5月の旬（3人分目安）</b>：初鰹さく≒¥800 ／ 新じゃが500g≒¥250 ／ そら豆1袋≒¥350 ／ グリーンピース1袋≒¥250 ／ 絹さや1袋≒¥180 ／ 新ごぼう1本≒¥150 ／ アスパラ1束≒¥250 ／ 新玉ねぎ4個≒¥250 ／ 真鯛1尾≒¥1,000<br>🎏 <b>GW(5/3〜5/6)・💐母の日(5/10)・👶こどもの日(5/5)</b> は予算内で特別メニューを設定</div>
+<main>
+
+<!-- 第1週 -->
+<div class="wb">
+  <div class="wh wh1"><span class="wt">第1週</span><span class="wr">5/1（金）〜5/3（日）</span><span class="wcost">週計≒¥2,500</span><span class="wth">🌿 5月スタート</span></div>
+  <div class="dg">
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">1</div><div class="dw">金</div><span class="ei">▼</span></div>
+      <div class="mm">鶏むねと新ごぼうの甘辛炒め</div>
+      <div class="md">鶏むね500g・新ごぼう・にんじん / みそ汁（豆腐・わかめ）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tsp">🌿 旬</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">鶏むね¥450＋新ごぼう¥150＋にんじん¥80 = <b>¥680</b></div>
+      <div class="cal"><span>🔥 1人分 約330kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方</div>
+        <div class="rmat">鶏むね500g・新ごぼう1本・にんじん½本 ／ <span>醤油大さじ2・みりん大さじ2・酒大さじ1・砂糖大さじ½・ごま油・白ごま</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>鶏むねは一口大のそぎ切り、塩こしょう・酒少々をもみ込む</li>
+          <li><span class="snum">2</span>新ごぼうはささがき、にんじんは細切り。ごぼうは水にさっと放してアクを取る</li>
+          <li><span class="snum">3</span>ごま油で鶏肉を中火で焼き、色が変わったらごぼう・にんじんを加えて炒める</li>
+          <li><span class="snum">4</span>調味料を回し入れ、汁気が少なくなるまで炒め、白ごまをふる</li>
+        </ul>
+        <div class="rtip">💡 新ごぼうは皮ごと使うと風味が良い。アクは抜きすぎないこと</div>
+      </div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">2</div><div class="dw sat">土</div><span class="fish">🐟 魚の日</span><span class="ei">▼</span></div>
+      <div class="mm">初鰹のたたき＋新玉ねぎサラダ</div>
+      <div class="md">鰹のたたき1さく・新玉ねぎ・大葉・みょうが / みそ汁（なめこ）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tsp">🌿 初鰹</span><span class="t th2">🟢 ハローディ</span></div>
+      <div class="cost">鰹¥800＋新玉¥80＋薬味¥150 = <b>¥1,030</b></div>
+      <div class="cal"><span>🔥 1人分 約280kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方</div>
+        <div class="rmat">鰹のたたき1さく・新玉ねぎ1個・大葉5枚・みょうが2本 ／ <span>ポン酢大さじ3・おろしにんにく少々・ごま油小さじ1</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>新玉ねぎは薄切りにして水に5分さらし、しっかり水気を切る</li>
+          <li><span class="snum">2</span>大葉は千切り、みょうがは小口切り</li>
+          <li><span class="snum">3</span>鰹は1cm厚さに切り、皿に盛って新玉・薬味を散らす</li>
+          <li><span class="snum">4</span>ポン酢にすりおろしにんにく＋ごま油を混ぜて回しかける</li>
+        </ul>
+        <div class="rtip">💡 鰹は買ったらすぐ食べるのが一番。冷蔵庫から出して10分常温に戻すと風味UP</div>
+      </div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">3</div><div class="dw holiday">日・祝</div><span class="ei">▼</span></div>
+      <div class="mm">豚しゃぶと新キャベツのレモンサラダ</div>
+      <div class="md">豚しゃぶ300g・新キャベツ・きゅうり・レモン / みそ汁（じゃがいも）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tq">⚡ 時短</span><span class="t tsp">🌿 旬</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">豚¥550＋新キャベツ¥100＋きゅうり¥80 = <b>¥730</b></div>
+      <div class="cal"><span>🔥 1人分 約290kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方</div>
+        <div class="rmat">豚しゃぶ300g・新キャベツ¼玉・きゅうり1本・レモン½個 ／ <span>ポン酢大さじ3・ごま油小さじ1・塩昆布ひとつまみ</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>新キャベツはざく切り、きゅうりは細切りにして塩昆布で軽く和える</li>
+          <li><span class="snum">2</span>沸騰した湯で豚しゃぶを1枚ずつ茹で、ザルに広げて粗熱を取る</li>
+          <li><span class="snum">3</span>器に野菜→豚肉の順に盛り、レモン汁＋ポン酢＋ごま油をかける</li>
+        </ul>
+        <div class="rtip">💡 豚肉は氷水ではなくザルで冷ますと脂が固まらず食感◎</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 第2週 -->
+<div class="wb">
+  <div class="wh wh2"><span class="wt">第2週</span><span class="wr">5/4（月・祝）〜5/10（日）</span><span class="wcost">週計≒¥9,500</span><span class="wth">🎏 GW＆💐母の日 特別週</span></div>
+  <div class="dg">
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">4</div><div class="dw holiday">月・祝</div><span class="special">🎏 GW</span><span class="ei">▼</span></div>
+      <div class="mm">鶏むねハーブグリル＋新じゃがバター</div>
+      <div class="md">鶏むね600g・新じゃが・ブロッコリー / コンソメスープ（玉ねぎ）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tev">🎏 GW</span><span class="t tsp">🌿 旬</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">鶏むね¥540＋新じゃが¥250＋ブロッコリー¥220 = <b>¥1,310</b></div>
+      <div class="cal"><span>🔥 1人分 約410kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方（ハーブグリル）</div>
+        <div class="rmat">鶏むね600g・新じゃが400g・ブロッコリー1個 ／ <span>塩・こしょう・乾燥ハーブ（オレガノorバジル）小さじ1・オリーブ油大さじ2・にんにく1片・バター10g</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>鶏むねは1.5cm厚さに開き、塩・こしょう・ハーブ・オリーブ油・つぶしたにんにくでマリネ（30分）</li>
+          <li><span class="snum">2</span>新じゃがは皮ごと半分に切り、レンジ600Wで5分加熱</li>
+          <li><span class="snum">3</span>フライパンに鶏肉を皮目から入れ、中火で4分→裏返して3分焼く</li>
+          <li><span class="snum">4</span>同じフライパンで新じゃがを炒め、最後にバターを絡める。ブロッコリーは塩茹で</li>
+        </ul>
+        <div class="rtip">💡 マリネは前日から漬けておくとさらに柔らか。新じゃがは皮ごと食べられる</div>
+      </div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">5</div><div class="dw holiday">火・祝</div><span class="special">👶 こどもの日</span><span class="ei">▼</span></div>
+      <div class="mm">ふわふわ鶏ハンバーグ＋星型にんじん</div>
+      <div class="md">鶏ひき400g・新玉ねぎ・卵・パン粉・にんじん / コーンスープ</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tev">👶 こどもの日</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">鶏ひき¥500＋玉ねぎ¥80＋卵¥30＋にんじん¥80 = <b>¥690＋デザート¥500 ≒ ¥1,190</b></div>
+      <div class="cal"><span>🔥 1人分 約380kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方（鶏ハンバーグ）</div>
+        <div class="rmat">鶏ひき400g・新玉ねぎ½個・卵1個・パン粉大さじ4・牛乳大さじ2・塩こしょう ／ <span>ソース：ケチャップ大さじ3・ウスター大さじ2・みりん大さじ1</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>新玉ねぎはみじん切りでレンジ2分→粗熱を取る</li>
+          <li><span class="snum">2</span>ボウルにひき肉・玉ねぎ・卵・パン粉・牛乳・塩こしょうを入れ、よく練る</li>
+          <li><span class="snum">3</span>3〜4等分にして小判型に成形、フライパンで両面焼き（中火3分→弱火5分蒸し焼き）</li>
+          <li><span class="snum">4</span>取り出して同じフライパンにソース材料を入れて煮詰め、ハンバーグにかける</li>
+          <li><span class="snum">5</span>にんじんは輪切りを星型で抜き、レンジ加熱して飾る</li>
+        </ul>
+        <div class="rtip">💡 デザートに柏餅 or いちご（¥500目安）。鶏ハンバーグは冷めてもふわふわ</div>
+      </div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">6</div><div class="dw holiday">水・祝</div><span class="special">🎏 GW最終</span><span class="ei">▼</span></div>
+      <div class="mm">鶏団子と豚しゃぶの寄せ鍋</div>
+      <div class="md">鶏ひき300g・豚しゃぶ300g・春雨・白菜・春菊・豆腐・きのこ / 〆うどん</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tev">🎏 GW</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">鶏ひき¥350＋豚¥550＋豆腐¥100＋野菜¥350＋春雨¥150 = <b>¥1,500</b></div>
+      <div class="cal"><span>🔥 1人分 約450kcal（〆込み）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方（寄せ鍋）</div>
+        <div class="rmat">鶏団子：鶏ひき300g・長ねぎみじん½本・しょうが・酒・塩・片栗粉 ／ 鍋具：豚しゃぶ300g・白菜¼・春菊1束・豆腐1丁・しめじ1袋 ／ <span>だし1L・薄口醤油大さじ3・みりん大さじ2・酒大さじ2</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>鶏団子の材料をボウルでよく練り合わせる</li>
+          <li><span class="snum">2</span>鍋にだし＋調味料を煮立て、鶏団子をスプーンで落として5分煮る</li>
+          <li><span class="snum">3</span>白菜・しめじ・豆腐を加え、豚しゃぶを広げて入れる</li>
+          <li><span class="snum">4</span>春菊を最後に加えて、火が通ったらポン酢でいただく</li>
+          <li><span class="snum">5</span>〆は冷凍うどんを入れて2分</li>
+        </ul>
+        <div class="rtip">💡 GW最終日にしっかり野菜とタンパク質。翌日からの平日に備えて</div>
+      </div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">7</div><div class="dw">木</div><span class="ei">▼</span></div>
+      <div class="mm">鶏むねの梅しそ蒸し</div>
+      <div class="md">鶏むね500g・大葉・梅干し / 絹さやのおひたし / みそ汁（えのき）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tq">⚡ 時短</span><span class="t tsp">🌿 旬</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">鶏むね¥450＋大葉¥100＋梅干し¥50＋絹さや¥180 = <b>¥780</b></div>
+      <div class="cal"><span>🔥 1人分 約240kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方（梅しそ蒸し）</div>
+        <div class="rmat">鶏むね500g・大葉8枚・梅干し2個 ／ <span>酒大さじ2・塩少々・ごま油小さじ1</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>鶏むねはそぎ切り、塩・酒をふって5分置く</li>
+          <li><span class="snum">2</span>梅干しは種を取ってたたき、大葉は千切り</li>
+          <li><span class="snum">3</span>耐熱皿に鶏肉を並べ、梅をのせて大葉を散らす</li>
+          <li><span class="snum">4</span>ラップして600Wで5分加熱、ごま油を回しかける</li>
+        </ul>
+        <div class="rtip">💡 さっぱりして翌日のお弁当にも◎</div>
+      </div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">8</div><div class="dw">金</div><span class="ei">▼</span></div>
+      <div class="mm">豚しゃぶと水菜のごまだれサラダ</div>
+      <div class="md">豚しゃぶ300g・水菜・きゅうり・トマト / みそ汁（豆腐）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tq">⚡ 時短</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">豚¥550＋水菜¥200＋きゅうり¥80＋トマト¥120 = <b>¥950</b></div>
+      <div class="cal"><span>🔥 1人分 約260kcal（ご飯除く）</span></div>
+      <div class="rbox"><div class="skip">✓ 4/2と同じ要領。たれは市販ごまだれ＋豆乳少々で伸ばすとまろやか</div></div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">9</div><div class="dw sat">土</div><span class="fish">🐟 魚の日</span><span class="ei">▼</span></div>
+      <div class="mm">鯵の塩焼き＋大根おろし</div>
+      <div class="md">鯵3尾・大根おろし・すだち / ほうれん草おひたし / みそ汁（わかめ）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tsp">🌿 旬</span><span class="t th2">🟢 ハローディ</span></div>
+      <div class="cost">鯵¥600＋大根¥100＋ほうれん草¥220 = <b>¥920</b></div>
+      <div class="cal"><span>🔥 1人分 約280kcal（ご飯除く）</span></div>
+      <div class="rbox"><div class="skip">✓ 定番のため省略。鯵はえらと内臓を取り、塩をふって15分置いてから焼く（中火で両面5分ずつ）</div></div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">10</div><div class="dw sun">日</div><span class="special">💐 母の日</span><span class="ei">▼</span></div>
+      <div class="mm">真鯛のアクアパッツァ風</div>
+      <div class="md">真鯛1尾・あさり・ミニトマト・新玉ねぎ・オリーブ / 玉子スープ</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tev">💐 母の日</span><span class="t tsp">🌿 旬</span><span class="t th2">🟢 ハローディ</span></div>
+      <div class="cost">真鯛¥1,000＋あさり¥350＋ミニトマト¥200＋オリーブ¥150 = <b>¥1,700</b></div>
+      <div class="cal"><span>🔥 1人分 約340kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方（アクアパッツァ風）</div>
+        <div class="rmat">真鯛1尾（小・うろこと内臓処理済み）・あさり200g（砂抜き済）・ミニトマト10個・新玉ねぎ½個・黒オリーブ8個・にんにく2片 ／ <span>白ワイン100ml（または酒）・水100ml・オリーブ油大さじ3・塩・こしょう・パセリ</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>真鯛は両面に塩をふって10分置き、水気を拭く</li>
+          <li><span class="snum">2</span>フライパンにオリーブ油・つぶしたにんにくを入れて弱火で香りを出す</li>
+          <li><span class="snum">3</span>真鯛を入れて両面焼き色をつけ、あさり・ミニトマト・玉ねぎ・オリーブを加える</li>
+          <li><span class="snum">4</span>白ワイン＋水を加えて蓋をし、中火で10分蒸し煮（あさりが開けばOK）</li>
+          <li><span class="snum">5</span>塩で味を整え、パセリを散らす</li>
+        </ul>
+        <div class="rtip">💡 母の日の特別メニュー。一見豪華だが手順は簡単。パンを添えてスープを楽しんで</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 第3週 -->
+<div class="wb">
+  <div class="wh wh3"><span class="wt">第3週</span><span class="wr">5/11（月）〜5/17（日）</span><span class="wcost">週計≒¥6,000</span><span class="wth">🍗 むね肉アレンジ週</span></div>
+  <div class="dg">
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">11</div><div class="dw">月</div><span class="ei">▼</span></div>
+      <div class="mm">鶏ひき肉の麻婆豆腐</div>
+      <div class="md">鶏ひき200g・木綿豆腐2丁・長ねぎ / もやしナムル / みそ汁</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tq">⚡ 時短</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">ひき肉¥250＋豆腐¥200＋もやし¥100 = <b>¥550</b></div>
+      <div class="cal"><span>🔥 1人分 約290kcal（ご飯除く）</span></div>
+      <div class="rbox"><div class="skip">✓ 4/7と同じレシピ。豆板醤の量で辛さ調整、お子さんがいれば少なめに</div></div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">12</div><div class="dw">火</div><span class="ei">▼</span></div>
+      <div class="mm">鶏むね蒸し鶏のよだれ鶏風</div>
+      <div class="md">鶏むね500g・きゅうり・長ねぎ・ラー油 / 玉子スープ</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">鶏むね¥450＋きゅうり¥80＋長ねぎ¥80 = <b>¥610</b></div>
+      <div class="cal"><span>🔥 1人分 約260kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方（よだれ鶏風）</div>
+        <div class="rmat">鶏むね500g・きゅうり1本 ／ たれ：<span>しょうゆ大さじ2・酢大さじ1・砂糖小さじ1・ラー油小さじ1・長ねぎみじん大さじ2・白ごま・花椒（あれば）</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>鶏むねは4/5と同じ要領でレンジ蒸し（600W6分→裏返し3分→余熱5分）</li>
+          <li><span class="snum">2</span>きゅうりは細切りにして皿に敷く</li>
+          <li><span class="snum">3</span>蒸し鶏を薄切りにして盛り付け、混ぜ合わせたたれを回しかける</li>
+        </ul>
+        <div class="rtip">💡 ラー油はお好みで。お子さん用には別皿で取り分けてから</div>
+      </div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">13</div><div class="dw">水</div><span class="ei">▼</span></div>
+      <div class="mm">豚しゃぶと新玉ねぎのみぞれ煮</div>
+      <div class="md">豚しゃぶ300g・新玉・大根おろし / みそ汁（えのき）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tsp">🌿 旬</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">豚¥550＋新玉¥80＋大根¥100 = <b>¥730</b></div>
+      <div class="cal"><span>🔥 1人分 約270kcal（ご飯除く）</span></div>
+      <div class="rbox"><div class="skip">✓ 4/9と同じレシピ。だし300ml・醤油みりん各大さじ2・酒大さじ1で煮る</div></div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">14</div><div class="dw">木</div><span class="ei">▼</span></div>
+      <div class="mm">鶏むね照り焼き＋絹さや炒め</div>
+      <div class="md">鶏むね500g・絹さや・しめじ / みそ汁（豆腐）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tsp">🌿 旬</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">鶏むね¥450＋絹さや¥180＋しめじ¥100 = <b>¥730</b></div>
+      <div class="cal"><span>🔥 1人分 約340kcal（ご飯除く）</span></div>
+      <div class="rbox"><div class="skip">✓ 定番。たれ：醤油2・みりん2・酒2・砂糖1。鶏むねはそぎ切りで火を通しやすく</div></div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">15</div><div class="dw">金</div><span class="ei">▼</span></div>
+      <div class="mm">鶏むねと新キャベツの塩昆布炒め</div>
+      <div class="md">鶏むね500g・新キャベツ・しめじ / みそ汁（わかめ）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tq">⚡ 時短</span><span class="t tsp">🌿 旬</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">鶏むね¥450＋新キャベツ¥100＋しめじ¥100 = <b>¥650</b></div>
+      <div class="cal"><span>🔥 1人分 約290kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方</div>
+        <div class="rmat">鶏むね500g・新キャベツ¼玉・しめじ1袋・塩昆布大さじ2 ／ <span>酒大さじ1・ごま油大さじ1・白ごま</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>鶏むねはそぎ切り、酒をもみ込む</li>
+          <li><span class="snum">2</span>新キャベツはざく切り、しめじはほぐす</li>
+          <li><span class="snum">3</span>ごま油で鶏肉を炒め、しめじ・キャベツを加えてさっと炒める</li>
+          <li><span class="snum">4</span>塩昆布を加えて全体になじませ、白ごまをふる</li>
+        </ul>
+        <div class="rtip">💡 味付けは塩昆布だけで十分。新キャベツは火を通しすぎないこと</div>
+      </div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">16</div><div class="dw sat">土</div><span class="fish">🐟 魚の日</span><span class="ei">▼</span></div>
+      <div class="mm">サケのちゃんちゃん焼き</div>
+      <div class="md">サケ3切・新キャベツ・玉ねぎ・しめじ・バター / みそ汁（豆腐）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tsp">🌿 旬</span><span class="t th2">🟢 ハローディ</span></div>
+      <div class="cost">サケ¥700＋野菜¥250＋バター¥30 = <b>¥980</b></div>
+      <div class="cal"><span>🔥 1人分 約350kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方（ちゃんちゃん焼き）</div>
+        <div class="rmat">サケ3切・新キャベツ¼玉・玉ねぎ½個・しめじ1袋・バター10g ／ <span>みそ大さじ3・みりん大さじ2・酒大さじ1・砂糖小さじ1</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>みそだれの調味料を混ぜておく</li>
+          <li><span class="snum">2</span>フライパンにキャベツ・玉ねぎ・しめじを敷き、サケをのせる</li>
+          <li><span class="snum">3</span>みそだれを回しかけ、蓋をして中火で10分蒸し焼き</li>
+          <li><span class="snum">4</span>仕上げにバターをのせ、全体を混ぜ合わせる</li>
+        </ul>
+        <div class="rtip">💡 ホットプレートで作ると食卓が華やかに。新キャベツの甘みでみそが美味しい</div>
+      </div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">17</div><div class="dw sun">日</div><span class="ei">▼</span></div>
+      <div class="mm">鶏むねしょうが焼き風</div>
+      <div class="md">鶏むね500g・新玉ねぎ・しょうが / 千切りキャベツ / みそ汁（なめこ）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tq">⚡ 時短</span><span class="t tsp">🌿 旬</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">鶏むね¥450＋新玉¥80＋しょうが¥50 = <b>¥580</b></div>
+      <div class="cal"><span>🔥 1人分 約310kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方</div>
+        <div class="rmat">鶏むね500g・新玉ねぎ1個・おろししょうが大さじ1 ／ <span>醤油大さじ2・みりん大さじ2・酒大さじ1・砂糖小さじ1・ごま油</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>鶏むねはそぎ切り、調味料・しょうがにつけて10分</li>
+          <li><span class="snum">2</span>新玉ねぎはくし切り</li>
+          <li><span class="snum">3</span>ごま油で玉ねぎを炒め、鶏肉を漬け汁ごと加えて中火で5分</li>
+          <li><span class="snum">4</span>汁気を絡めて完成。千切りキャベツを添える</li>
+        </ul>
+        <div class="rtip">💡 鶏むねでも漬け込むことで柔らかく。新玉ねぎの甘みが活きる</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 第4週 -->
+<div class="wb">
+  <div class="wh wh4"><span class="wt">第4週</span><span class="wr">5/18（月）〜5/24（日）</span><span class="wcost">週計≒¥6,000</span><span class="wth">🌿 初夏野菜たっぷり</span></div>
+  <div class="dg">
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">18</div><div class="dw">月</div><span class="ei">▼</span></div>
+      <div class="mm">豚しゃぶときゅうりの中華だれ</div>
+      <div class="md">豚しゃぶ300g・きゅうり・トマト・長ねぎ / 玉子スープ</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tq">⚡ 時短</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">豚¥550＋きゅうり¥80＋トマト¥120 = <b>¥750</b></div>
+      <div class="cal"><span>🔥 1人分 約280kcal（ご飯除く）</span></div>
+      <div class="rbox"><div class="skip">✓ 中華だれ：醤油2・酢2・ごま油1・砂糖少々・長ねぎみじん。冷しゃぶ風で爽やか</div></div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">19</div><div class="dw">火</div><span class="ei">▼</span></div>
+      <div class="mm">鶏むねの塩麹焼き＋アスパラ</div>
+      <div class="md">鶏むね500g・アスパラ・しめじ / みそ汁（豆腐）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tsp">🌿 旬</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">鶏むね¥450＋アスパラ¥250＋しめじ¥100 = <b>¥800</b></div>
+      <div class="cal"><span>🔥 1人分 約300kcal（ご飯除く）</span></div>
+      <div class="rbox"><div class="skip">✓ 4/1と同じ。塩麹で漬け込むと鶏むねが驚くほど柔らかく。アスパラは下半分の皮を剥いて炒める</div></div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">20</div><div class="dw">水</div><span class="ei">▼</span></div>
+      <div class="mm">鶏ひき豆腐ハンバーグ</div>
+      <div class="md">鶏ひき300g・木綿豆腐1丁・新玉ねぎ / 大根おろしポン酢 / みそ汁</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">鶏ひき¥350＋豆腐¥100＋新玉¥80 = <b>¥530</b></div>
+      <div class="cal"><span>🔥 1人分 約290kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方（豆腐ハンバーグ）</div>
+        <div class="rmat">鶏ひき300g・木綿豆腐1丁（水切り）・新玉ねぎ¼個・卵1個・片栗粉大さじ2・塩こしょう ／ <span>大根おろし・ポン酢・大葉</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>豆腐は重しをして15分水切り、新玉はみじん切り</li>
+          <li><span class="snum">2</span>ボウルで全材料を粘りが出るまで混ぜる</li>
+          <li><span class="snum">3</span>3等分にして小判型、フライパンで両面焼き（中火3分→蓋して弱火6分）</li>
+          <li><span class="snum">4</span>大根おろし＋ポン酢＋大葉でいただく</li>
+        </ul>
+        <div class="rtip">💡 豆腐入りでカロリーダウン＆ふわふわ。冷めても美味しい</div>
+      </div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">21</div><div class="dw">木</div><span class="ei">▼</span></div>
+      <div class="mm">鶏むねとピーマンの細切り炒め</div>
+      <div class="md">鶏むね500g・ピーマン・パプリカ・たけのこ / みそ汁（わかめ）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tsp">🌿 旬</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">鶏むね¥450＋ピーマン¥120＋たけのこ¥200 = <b>¥770</b></div>
+      <div class="cal"><span>🔥 1人分 約290kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方（青椒肉絲風）</div>
+        <div class="rmat">鶏むね500g・ピーマン3個・赤パプリカ½個・茹でたけのこ100g ／ <span>下味：酒・醤油各大さじ1・片栗粉大さじ1 ／ 合わせ調味料：オイスター大さじ1・醤油大さじ1・砂糖小さじ1・酒大さじ1</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>鶏むねは細切り、下味をもみ込む</li>
+          <li><span class="snum">2</span>ピーマン・パプリカ・たけのこも細切り</li>
+          <li><span class="snum">3</span>ごま油で鶏肉を炒め、色が変わったら野菜を加える</li>
+          <li><span class="snum">4</span>合わせ調味料を入れて強火で手早く絡める</li>
+        </ul>
+        <div class="rtip">💡 鶏むねでもオイスターのコクで満足感あり。たけのこは水煮でOK</div>
+      </div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">22</div><div class="dw">金</div><span class="ei">▼</span></div>
+      <div class="mm">豚しゃぶレタスサラダ</div>
+      <div class="md">豚しゃぶ300g・レタス・トマト・コーン / みそ汁（じゃがいも）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tq">⚡ 時短</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">豚¥550＋レタス¥150＋トマト¥120 = <b>¥820</b></div>
+      <div class="cal"><span>🔥 1人分 約260kcal（ご飯除く）</span></div>
+      <div class="rbox"><div class="skip">✓ 4/2のアレンジ。レタスはちぎるだけ、ごまだれ or ポン酢で。冷蔵庫で冷やしておくとパリッと</div></div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">23</div><div class="dw sat">土</div><span class="fish">🐟 魚の日</span><span class="ei">▼</span></div>
+      <div class="mm">ぶりの照り焼き</div>
+      <div class="md">ぶり3切・大根おろし / 卵焼き / みそ汁（わかめ）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t th2">🟢 ハローディ</span></div>
+      <div class="cost">ぶり¥700＋大根¥100＋卵¥60 = <b>¥860</b></div>
+      <div class="cal"><span>🔥 1人分 約310kcal（ご飯除く）</span></div>
+      <div class="rbox"><div class="skip">✓ 定番。たれ：醤油2・みりん2・酒2・砂糖1。ぶりは塩をふって10分置いて水気を拭くと臭み消し</div></div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">24</div><div class="dw sun">日</div><span class="ei">▼</span></div>
+      <div class="mm">鶏むねバンバンジー</div>
+      <div class="md">鶏むね500g（蒸し）・きゅうり・トマト・水菜 / 玉子スープ</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tq">⚡ 時短</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">鶏むね¥450＋野菜¥300 = <b>¥750</b></div>
+      <div class="cal"><span>🔥 1人分 約240kcal（ご飯除く）</span></div>
+      <div class="rbox"><div class="skip">✓ 4/8と同じ。前日に蒸し鶏を作り置きしておくと当日5分でできる</div></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 第5週 -->
+<div class="wb">
+  <div class="wh wh5"><span class="wt">第5週</span><span class="wr">5/25（月）〜5/31（日）</span><span class="wcost">週計≒¥6,000</span><span class="wth">🌿 5月〆・夏支度</span></div>
+  <div class="dg">
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">25</div><div class="dw">月</div><span class="ei">▼</span></div>
+      <div class="mm">豚しゃぶと新玉ねぎの甘辛炒め煮</div>
+      <div class="md">豚しゃぶ300g・新玉ねぎ・しめじ / みそ汁（豆腐）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tsp">🌿 旬</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">豚¥550＋新玉¥120＋しめじ¥100 = <b>¥770</b></div>
+      <div class="cal"><span>🔥 1人分 約310kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方</div>
+        <div class="rmat">豚しゃぶ300g・新玉ねぎ1個・しめじ1袋 ／ <span>醤油大さじ2・みりん大さじ2・酒大さじ1・砂糖小さじ1・しょうが少々</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>新玉ねぎはくし切り、しめじはほぐす</li>
+          <li><span class="snum">2</span>フライパンに新玉・しめじを入れて中火で2分炒める</li>
+          <li><span class="snum">3</span>豚しゃぶを広げて加え、調味料を回し入れて2分</li>
+          <li><span class="snum">4</span>豚に火が通れば完成。新玉のとろっと感が美味</li>
+        </ul>
+        <div class="rtip">💡 新玉は煮ると驚くほど甘くなる。週初めの簡単メニューに</div>
+      </div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">26</div><div class="dw">火</div><span class="ei">▼</span></div>
+      <div class="mm">鶏むねの親子煮（卵とじ）</div>
+      <div class="md">鶏むね500g・卵3個・新玉ねぎ・三つ葉 / みそ汁（わかめ）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tq">⚡ 時短</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">鶏むね¥450＋卵¥90＋新玉¥80 = <b>¥620</b></div>
+      <div class="cal"><span>🔥 1人分 約330kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方（親子煮）</div>
+        <div class="rmat">鶏むね500g・卵3個・新玉ねぎ1個・三つ葉少々 ／ <span>だし200ml・醤油大さじ3・みりん大さじ3・砂糖小さじ1</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>鶏むねはそぎ切り、新玉はくし切り</li>
+          <li><span class="snum">2</span>鍋にだし＋調味料＋玉ねぎを入れて2分煮る</li>
+          <li><span class="snum">3</span>鶏肉を加えて5分煮る</li>
+          <li><span class="snum">4</span>溶き卵を回し入れ、半熟で火を止める。三つ葉を散らす</li>
+        </ul>
+        <div class="rtip">💡 ご飯にのせれば親子丼にも。卵は半熟で止めるのがコツ</div>
+      </div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">27</div><div class="dw">水</div><span class="ei">▼</span></div>
+      <div class="mm">鶏団子と春雨スープ</div>
+      <div class="md">鶏ひき250g・春雨・白菜・にんじん・しょうが / 卵焼き</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tq">⚡ 時短</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">鶏ひき¥300＋春雨¥150＋野菜¥200 = <b>¥650</b></div>
+      <div class="cal"><span>🔥 1人分 約280kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方</div>
+        <div class="rmat">鶏ひき250g・春雨50g・白菜¼・にんじん½本 ／ <span>団子用：長ねぎ・しょうが・酒・塩 ／ スープ：鶏がらスープ800ml・醤油大さじ1・酒大さじ1・ごま油</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>鶏ひきにおろししょうが・刻みねぎ・酒・塩を加えてよく練る</li>
+          <li><span class="snum">2</span>鍋に鶏がらスープを沸かし、団子をスプーンで落として4分煮る</li>
+          <li><span class="snum">3</span>白菜・にんじん・春雨を加えて5分</li>
+          <li><span class="snum">4</span>醤油・ごま油で味を整える</li>
+        </ul>
+        <div class="rtip">💡 メイン＋汁物兼用で楽。冷めても美味しいので作り置きにも</div>
+      </div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">28</div><div class="dw">木</div><span class="ei">▼</span></div>
+      <div class="mm">鶏むねのトマト煮</div>
+      <div class="md">鶏むね500g・トマト缶・玉ねぎ・しめじ / コンソメスープ</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">鶏むね¥450＋トマト缶¥100＋玉ねぎ¥80 = <b>¥630</b></div>
+      <div class="cal"><span>🔥 1人分 約280kcal（ご飯除く）</span></div>
+      <div class="rbox">
+        <div class="rtitle">📝 作り方</div>
+        <div class="rmat">鶏むね500g・カットトマト缶1缶・玉ねぎ1個・しめじ1袋・にんにく1片 ／ <span>オリーブ油・コンソメ1個・塩こしょう・ケチャップ大さじ1・砂糖少々</span></div>
+        <ul class="rsteps">
+          <li><span class="snum">1</span>鶏むねは一口大、塩こしょうして薄力粉を薄くまぶす</li>
+          <li><span class="snum">2</span>オリーブ油でにんにく・玉ねぎを炒め、鶏肉を加えて表面を焼く</li>
+          <li><span class="snum">3</span>トマト缶・しめじ・コンソメを加えて15分煮る</li>
+          <li><span class="snum">4</span>ケチャップ・砂糖で味を整える</li>
+        </ul>
+        <div class="rtip">💡 翌日はパンにかけたりパスタソースにアレンジ可能</div>
+      </div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">29</div><div class="dw">金</div><span class="ei">▼</span></div>
+      <div class="mm">豚しゃぶ冷しゃぶ（夏支度）</div>
+      <div class="md">豚しゃぶ300g・水菜・きゅうり・トマト・大葉 / みそ汁（豆腐）</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tq">⚡ 時短</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">豚¥550＋水菜¥200＋きゅうり¥80＋トマト¥120 = <b>¥950</b></div>
+      <div class="cal"><span>🔥 1人分 約260kcal（ご飯除く）</span></div>
+      <div class="rbox"><div class="skip">✓ ポン酢 or ごまだれで。豚は氷水ではなくザル冷ましで（食感◎）。大葉でさっぱり</div></div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">30</div><div class="dw sat">土</div><span class="fish">🐟 魚の日</span><span class="ei">▼</span></div>
+      <div class="mm">サケの塩焼き＋大根おろし</div>
+      <div class="md">サケ3切・大根おろし・すだち / ほうれん草おひたし / みそ汁</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t th2">🟢 ハローディ</span></div>
+      <div class="cost">サケ¥700＋大根¥100＋ほうれん草¥220 = <b>¥1,020</b></div>
+      <div class="cal"><span>🔥 1人分 約290kcal（ご飯除く）</span></div>
+      <div class="rbox"><div class="skip">✓ 定番。塩をふって15分置き、水気を拭いてから焼く（中火で皮目から4分→裏返し3分）</div></div>
+    </div>
+
+    <div class="dc" onclick="toggle(this)">
+      <div class="dt"><div class="dn">31</div><div class="dw sun">日</div><span class="ei">▼</span></div>
+      <div class="mm">🌿 5月〆！豚しゃぶ鍋＋〆うどん</div>
+      <div class="md">豚しゃぶ400g・豆腐2丁・新キャベツ・春菊・えのき / 〆うどん</div>
+      <div class="tgs"><span class="t tp">🍗 高タンパク</span><span class="t tsp">🌿 旬</span><span class="t te2">🔴 エザキ</span></div>
+      <div class="cost">豚¥730＋豆腐¥200＋野菜¥250＋うどん¥100 = <b>¥1,280</b></div>
+      <div class="cal"><span>🔥 1人分 約400kcal（〆込み）</span></div>
+      <div class="rbox"><div class="skip">✓ 月末の労いに。昆布だしまたはだしパック、ポン酢でいただく。〆は冷凍うどん</div></div>
+    </div>
+
+  </div>
+</div>
+
+</main>
+</div>
+
+<!-- SHOPPING -->
+<div id="pn-shop" class="pn">
+<div class="sp">
+  <div class="spnote">🛒 <b>まとめ買いは月5回・週初め（月曜前後）</b> ／ 🐟 <b>魚（鰹・鯵・サケ・ぶり・真鯛）は当日か前日にハローディで</b>（鮮度優先）<br>🎏 <b>第2回（5/4頃）はGW＆母の日特別週で多め</b>。新玉・新キャベツ・新じゃが・絹さや・そら豆など<b>「新」「春」食材</b>を意識</div>
+
+  <div class="sw">
+    <div class="swh swh1"><span class="swtitle">🛒 第1回まとめ買い</span><span class="swdate">4/30頃 ／ 5/1〜5/3分（3日）</span><span class="swbudget">目安 ¥2,500</span></div>
+    <div class="scols">
+      <div class="scol">
+        <div class="schd schd-e">🔴 エザキ精肉店</div>
+        <div class="scat">鶏肉</div>
+        <ul class="slist">
+          <li>鶏むね肉<span class="sn">500g×1p</span><span class="sp2">¥450</span></li>
+        </ul>
+        <div class="scat">豚肉</div>
+        <ul class="slist">
+          <li>豚しゃぶ用<span class="sn">300g×1p</span><span class="sp2">¥550</span></li>
+        </ul>
+      </div>
+      <div class="scol">
+        <div class="schd schd-h">🟢 ハローディ</div>
+        <div class="scat">魚介（5/2購入）</div>
+        <ul class="slist"><li>初鰹のたたき<span class="sn">1さく</span><span class="sp2">¥800</span></li></ul>
+        <div class="scat">卵・豆腐</div>
+        <ul class="slist">
+          <li>木綿豆腐<span class="sn">1丁</span><span class="sp2">¥100</span></li>
+          <li>なめこ<span class="sn">1袋</span><span class="sp2">¥120</span></li>
+        </ul>
+      </div>
+      <div class="scol">
+        <div class="schd schd-s">🔵 サンリブ</div>
+        <div class="scat">5月の旬野菜</div>
+        <ul class="slist">
+          <li>新ごぼう<span class="sn">1本</span><span class="sp2">¥150</span></li>
+          <li>新玉ねぎ<span class="sn">3個</span><span class="sp2">¥200</span></li>
+          <li>新キャベツ<span class="sn">¼玉</span><span class="sp2">¥100</span></li>
+          <li>大葉<span class="sn">1パック</span><span class="sp2">¥100</span></li>
+          <li>みょうが<span class="sn">2本</span><span class="sp2">¥100</span></li>
+        </ul>
+        <div class="scat">常備</div>
+        <ul class="slist">
+          <li>きゅうり<span class="sn">1本</span><span class="sp2">¥80</span></li>
+          <li>にんじん<span class="sn">1本</span><span class="sp2">¥80</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="stotal"><span>小計目安</span><b>¥2,830前後</b><span>※調味料はストック分使用</span></div>
+  </div>
+
+  <div class="sw">
+    <div class="swh swh2"><span class="swtitle">🛒 第2回まとめ買い 🎏💐特別週</span><span class="swdate">5/4頃 ／ 5/4〜5/10分（7日・GW＆母の日）</span><span class="swbudget">目安 ¥9,500</span></div>
+    <div class="scols">
+      <div class="scol">
+        <div class="schd schd-e">🔴 エザキ精肉店</div>
+        <div class="scat">鶏肉（特別週多め）</div>
+        <ul class="slist">
+          <li>鶏むね肉<span class="sn">600g×2p</span><span class="sp2">¥1,080</span></li>
+          <li>鶏むね肉<span class="sn">500g×1p</span><span class="sp2">¥450</span></li>
+          <li>鶏ひき肉<span class="sn">400g×1（5/5用）</span><span class="sp2">¥500</span></li>
+          <li>鶏ひき肉<span class="sn">300g×1（5/6用）</span><span class="sp2">¥350</span></li>
+        </ul>
+        <div class="scat">豚肉</div>
+        <ul class="slist">
+          <li>豚しゃぶ用<span class="sn">300g×2p</span><span class="sp2">¥1,100</span></li>
+          <li>豚しゃぶ用（鍋用）<span class="sn">300g×1p</span><span class="sp2">¥550</span></li>
+        </ul>
+      </div>
+      <div class="scol">
+        <div class="schd schd-h">🟢 ハローディ</div>
+        <div class="scat">魚介（鮮度優先・直前購入）</div>
+        <ul class="slist">
+          <li>鯵<span class="sn">3尾（5/9用）</span><span class="sp2">¥600</span></li>
+          <li>真鯛<span class="sn">1尾（5/10母の日用）</span><span class="sp2">¥1,000</span></li>
+          <li>あさり<span class="sn">200g（砂抜き済）</span><span class="sp2">¥350</span></li>
+        </ul>
+        <div class="scat">卵・豆腐・加工品</div>
+        <ul class="slist">
+          <li>卵<span class="sn">10個入り×1p</span><span class="sp2">¥300</span></li>
+          <li>木綿豆腐<span class="sn">2丁</span><span class="sp2">¥200</span></li>
+          <li>パン粉<span class="sn">1袋</span><span class="sp2">¥150</span></li>
+          <li>春雨<span class="sn">1袋</span><span class="sp2">¥150</span></li>
+          <li>えのき<span class="sn">1袋</span><span class="sp2">¥100</span></li>
+          <li>しめじ<span class="sn">2袋</span><span class="sp2">¥200</span></li>
+          <li>冷凍うどん<span class="sn">5食入り×1（鍋〆用）</span><span class="sp2">¥300</span></li>
+          <li>黒オリーブ<span class="sn">小1瓶</span><span class="sp2">¥250</span></li>
+        </ul>
+      </div>
+      <div class="scol">
+        <div class="schd schd-s">🔵 サンリブ</div>
+        <div class="scat">5月の旬野菜</div>
+        <ul class="slist">
+          <li>新じゃが<span class="sn">500g</span><span class="sp2">¥250</span></li>
+          <li>新玉ねぎ<span class="sn">5個</span><span class="sp2">¥300</span></li>
+          <li>新キャベツ<span class="sn">1玉</span><span class="sp2">¥320</span></li>
+          <li>絹さや<span class="sn">1袋</span><span class="sp2">¥180</span></li>
+          <li>ブロッコリー<span class="sn">1個</span><span class="sp2">¥220</span></li>
+          <li>アスパラ<span class="sn">1束</span><span class="sp2">¥250</span></li>
+          <li>ミニトマト<span class="sn">1パック</span><span class="sp2">¥200</span></li>
+          <li>春菊<span class="sn">1袋</span><span class="sp2">¥200</span></li>
+        </ul>
+        <div class="scat">常備</div>
+        <ul class="slist">
+          <li>大根<span class="sn">1本</span><span class="sp2">¥200</span></li>
+          <li>長ねぎ<span class="sn">2本</span><span class="sp2">¥200</span></li>
+          <li>水菜<span class="sn">1袋</span><span class="sp2">¥200</span></li>
+          <li>きゅうり<span class="sn">2本</span><span class="sp2">¥160</span></li>
+          <li>にんじん<span class="sn">2本</span><span class="sp2">¥160</span></li>
+          <li>白菜<span class="sn">¼玉</span><span class="sp2">¥150</span></li>
+          <li>ほうれん草<span class="sn">1束</span><span class="sp2">¥220</span></li>
+          <li>梅干し<span class="sn">1パック</span><span class="sp2">¥300</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="stotal"><span>小計目安</span><b>¥9,510前後</b><span>※GW＆母の日・特別5日含む</span></div>
+  </div>
+
+  <div class="sw">
+    <div class="swh swh3"><span class="swtitle">🛒 第3回まとめ買い</span><span class="swdate">5/11頃 ／ 5/11〜5/17分（7日）</span><span class="swbudget">目安 ¥6,000</span></div>
+    <div class="scols">
+      <div class="scol">
+        <div class="schd schd-e">🔴 エザキ精肉店</div>
+        <div class="scat">鶏肉</div>
+        <ul class="slist">
+          <li>鶏むね肉<span class="sn">500g×4p</span><span class="sp2">¥1,800</span></li>
+          <li>鶏ひき肉<span class="sn">200g×1</span><span class="sp2">¥250</span></li>
+        </ul>
+        <div class="scat">豚肉</div>
+        <ul class="slist">
+          <li>豚しゃぶ用<span class="sn">300g×1p</span><span class="sp2">¥550</span></li>
+        </ul>
+      </div>
+      <div class="scol">
+        <div class="schd schd-h">🟢 ハローディ</div>
+        <div class="scat">魚介（5/16購入）</div>
+        <ul class="slist"><li>サケ切り身<span class="sn">3切れ</span><span class="sp2">¥700</span></li></ul>
+        <div class="scat">卵・豆腐</div>
+        <ul class="slist">
+          <li>卵<span class="sn">10個入り×1p</span><span class="sp2">¥300</span></li>
+          <li>木綿豆腐<span class="sn">3丁</span><span class="sp2">¥300</span></li>
+          <li>えのき<span class="sn">2袋</span><span class="sp2">¥200</span></li>
+          <li>しめじ<span class="sn">2袋</span><span class="sp2">¥200</span></li>
+          <li>なめこ<span class="sn">1袋</span><span class="sp2">¥120</span></li>
+        </ul>
+      </div>
+      <div class="scol">
+        <div class="schd schd-s">🔵 サンリブ</div>
+        <div class="scat">5月の旬野菜</div>
+        <ul class="slist">
+          <li>新キャベツ<span class="sn">1玉</span><span class="sp2">¥320</span></li>
+          <li>新玉ねぎ<span class="sn">3個</span><span class="sp2">¥200</span></li>
+          <li>絹さや<span class="sn">1袋</span><span class="sp2">¥180</span></li>
+          <li>大葉<span class="sn">1パック</span><span class="sp2">¥100</span></li>
+        </ul>
+        <div class="scat">常備</div>
+        <ul class="slist">
+          <li>大根<span class="sn">1本</span><span class="sp2">¥200</span></li>
+          <li>長ねぎ<span class="sn">2本</span><span class="sp2">¥200</span></li>
+          <li>きゅうり<span class="sn">2本</span><span class="sp2">¥160</span></li>
+          <li>もやし<span class="sn">2袋</span><span class="sp2">¥200</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="stotal"><span>小計目安</span><b>¥5,980前後</b></div>
+  </div>
+
+  <div class="sw">
+    <div class="swh swh4"><span class="swtitle">🛒 第4回まとめ買い</span><span class="swdate">5/18頃 ／ 5/18〜5/24分（7日）</span><span class="swbudget">目安 ¥6,000</span></div>
+    <div class="scols">
+      <div class="scol">
+        <div class="schd schd-e">🔴 エザキ精肉店</div>
+        <div class="scat">鶏肉</div>
+        <ul class="slist">
+          <li>鶏むね肉<span class="sn">500g×4p</span><span class="sp2">¥1,800</span></li>
+          <li>鶏ひき肉<span class="sn">300g×1</span><span class="sp2">¥350</span></li>
+        </ul>
+        <div class="scat">豚肉</div>
+        <ul class="slist">
+          <li>豚しゃぶ用<span class="sn">300g×2p</span><span class="sp2">¥1,100</span></li>
+        </ul>
+      </div>
+      <div class="scol">
+        <div class="schd schd-h">🟢 ハローディ</div>
+        <div class="scat">魚介（5/23購入）</div>
+        <ul class="slist"><li>ぶり切り身<span class="sn">3切れ</span><span class="sp2">¥700</span></li></ul>
+        <div class="scat">卵・豆腐・加工品</div>
+        <ul class="slist">
+          <li>卵<span class="sn">10個入り×1p</span><span class="sp2">¥300</span></li>
+          <li>木綿豆腐<span class="sn">2丁</span><span class="sp2">¥200</span></li>
+          <li>しめじ<span class="sn">2袋</span><span class="sp2">¥200</span></li>
+          <li>カットトマト缶<span class="sn">2缶</span><span class="sp2">¥200</span></li>
+          <li>コーン缶<span class="sn">1缶</span><span class="sp2">¥120</span></li>
+        </ul>
+      </div>
+      <div class="scol">
+        <div class="schd schd-s">🔵 サンリブ</div>
+        <div class="scat">5月の旬野菜</div>
+        <ul class="slist">
+          <li>新玉ねぎ<span class="sn">4個</span><span class="sp2">¥250</span></li>
+          <li>アスパラ<span class="sn">1束</span><span class="sp2">¥250</span></li>
+          <li>たけのこ水煮<span class="sn">1袋</span><span class="sp2">¥200</span></li>
+          <li>ピーマン<span class="sn">5個</span><span class="sp2">¥150</span></li>
+          <li>パプリカ<span class="sn">1個</span><span class="sp2">¥150</span></li>
+        </ul>
+        <div class="scat">常備</div>
+        <ul class="slist">
+          <li>レタス<span class="sn">1玉</span><span class="sp2">¥200</span></li>
+          <li>水菜<span class="sn">1袋</span><span class="sp2">¥200</span></li>
+          <li>きゅうり<span class="sn">2本</span><span class="sp2">¥160</span></li>
+          <li>トマト<span class="sn">3個</span><span class="sp2">¥350</span></li>
+          <li>大根<span class="sn">¾本</span><span class="sp2">¥150</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="stotal"><span>小計目安</span><b>¥6,030前後</b></div>
+  </div>
+
+  <div class="sw">
+    <div class="swh swh5"><span class="swtitle">🛒 第5回まとめ買い</span><span class="swdate">5/25頃 ／ 5/25〜5/31分（7日）</span><span class="swbudget">目安 ¥6,000</span></div>
+    <div class="scols">
+      <div class="scol">
+        <div class="schd schd-e">🔴 エザキ精肉店</div>
+        <div class="scat">鶏肉</div>
+        <ul class="slist">
+          <li>鶏むね肉<span class="sn">500g×3p</span><span class="sp2">¥1,350</span></li>
+          <li>鶏ひき肉<span class="sn">250g×1</span><span class="sp2">¥300</span></li>
+        </ul>
+        <div class="scat">豚肉</div>
+        <ul class="slist">
+          <li>豚しゃぶ用<span class="sn">300g×2p</span><span class="sp2">¥1,100</span></li>
+          <li>豚しゃぶ用（鍋用）<span class="sn">400g×1p</span><span class="sp2">¥730</span></li>
+        </ul>
+      </div>
+      <div class="scol">
+        <div class="schd schd-h">🟢 ハローディ</div>
+        <div class="scat">魚介（5/30購入）</div>
+        <ul class="slist"><li>サケ切り身<span class="sn">3切れ</span><span class="sp2">¥700</span></li></ul>
+        <div class="scat">卵・豆腐</div>
+        <ul class="slist">
+          <li>卵<span class="sn">10個入り×1p</span><span class="sp2">¥300</span></li>
+          <li>木綿豆腐<span class="sn">3丁</span><span class="sp2">¥300</span></li>
+          <li>えのき<span class="sn">2袋</span><span class="sp2">¥200</span></li>
+          <li>冷凍うどん<span class="sn">5食入り×1（鍋〆用）</span><span class="sp2">¥300</span></li>
+        </ul>
+      </div>
+      <div class="scol">
+        <div class="schd schd-s">🔵 サンリブ</div>
+        <div class="scat">5月の旬野菜</div>
+        <ul class="slist">
+          <li>新キャベツ<span class="sn">1玉</span><span class="sp2">¥320</span></li>
+          <li>新玉ねぎ<span class="sn">3個</span><span class="sp2">¥200</span></li>
+          <li>春菊<span class="sn">1袋</span><span class="sp2">¥200</span></li>
+          <li>大葉<span class="sn">1パック</span><span class="sp2">¥100</span></li>
+          <li>三つ葉<span class="sn">1パック</span><span class="sp2">¥120</span></li>
+        </ul>
+        <div class="scat">常備</div>
+        <ul class="slist">
+          <li>水菜<span class="sn">1袋</span><span class="sp2">¥200</span></li>
+          <li>きゅうり<span class="sn">2本</span><span class="sp2">¥160</span></li>
+          <li>トマト<span class="sn">3個</span><span class="sp2">¥350</span></li>
+          <li>大根<span class="sn">1本</span><span class="sp2">¥200</span></li>
+          <li>ほうれん草<span class="sn">1束</span><span class="sp2">¥220</span></li>
+          <li>長ねぎ<span class="sn">2本</span><span class="sp2">¥200</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="stotal"><span>小計目安</span><b>¥6,050前後</b></div>
+  </div>
+
+  <div class="sumbox">
+    <div class="sumtitle">📊 5月 予算まとめ</div>
+    <div class="sumg">
+      <div class="sumc"><div class="suml">第1回（3日分）</div><div class="sumv">≒ ¥2,830</div></div>
+      <div class="sumc"><div class="suml">第2回 🎏💐特別（7日）</div><div class="sumv">≒ ¥9,510</div></div>
+      <div class="sumc"><div class="suml">第3回（7日分）</div><div class="sumv">≒ ¥5,980</div></div>
+      <div class="sumc"><div class="suml">第4回（7日分）</div><div class="sumv">≒ ¥6,030</div></div>
+      <div class="sumc"><div class="suml">第5回（7日分）</div><div class="sumv">≒ ¥6,050</div></div>
+      <div class="sumc"><div class="suml">合計目安</div><div class="sumv">≒ ¥30,400</div></div>
+      <div class="sumc"><div class="suml">予算超過</div><div class="sumv">+ ¥400</div></div>
+      <div class="sumc"><div class="suml">鶏むね使用日</div><div class="sumv">19日</div></div>
+      <div class="sumc"><div class="suml">魚の日（週1回）</div><div class="sumv">5回 ¥3,800</div></div>
+      <div class="sumc"><div class="suml">特別メニュー</div><div class="sumv">4回（GW3＋母の日）</div></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer>🍗 揚げ物なし ／ 炒め・煮・焼・蒸・鍋のみ ／ 🍚 米は購入しない ／ ▼を押すと作り方が開きます ／ 🌿 5月版</footer>
+
+<script>
+function toggle(el){el.classList.toggle('open');}
+function go(name,btn){
+  document.querySelectorAll('.pn').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.tb').forEach(b=>b.classList.remove('on'));
+  document.getElementById('pn-'+name).classList.add('on');
+  btn.classList.add('on');
+}
+</script>
+</body>
+</html>
